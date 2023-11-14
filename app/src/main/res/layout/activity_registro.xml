@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registro">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logopng" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+
+        android:text="REGISTRO"
+        android:textColor="#3081C1"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/ediText_correo"
+        android:layout_width="295dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/ic_mail"
+        android:ems="10"
+        android:hint="Ingrese su correo"
+        android:inputType="text"
+        android:tag="Ingrese su correo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+
+    <EditText
+        android:id="@+id/ediText_pw"
+        android:layout_width="295dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="24dp"
+        android:drawableLeft="@drawable/ic_key"
+        android:ems="10"
+        android:hint="Ingrese su contrasena"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ediText_correo" />
+
+    <Button
+        android:id="@+id/btn_Inicio"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="#098FBA"
+        android:text="REGISTRAR"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ediText_pw"
+        app:strokeColor="#098FBA" />
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Inicio">
+
+        <Button
+            android:id="@+id/btn_registro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="#098FBA"
+            android:text="LOGIN"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btn_olvpsw"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#098FBA"
+            android:text="RECUPERAR CLAVE"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:drawableLeft="@drawable/ic_name"
+        android:ems="10"
+        android:hint="Nombres completos"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
